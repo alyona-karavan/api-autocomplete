@@ -1,0 +1,93 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+.search-bar {
+  width: 50%;
+  margin: 20px auto;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  display: flex;
+}
+
+#search-input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+#search-input:focus {
+  outline: none;
+  border: 1px solid #4caf50;
+}
+
+#autocomplete-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: #f9f9f9;
+  display: none;
+  cursor: pointer;
+}
+
+#autocomplete-list li {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+#autocomplete-list li:last-child {
+  border-bottom: none;
+}
+
+#autocomplete-list li:hover {
+  background-color: #f2f2f2;
+}
+
+#added-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#added-list li {
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+  padding: 10px;
+  margin: 0 auto;
+  border-bottom: 1px solid #ccc;
+}
+
+#added-list li:last-child {
+  border-bottom: none;
+}
+
+.delete-button {
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 0 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background-color: #cc0000;
+}
